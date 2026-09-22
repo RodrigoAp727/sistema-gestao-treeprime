@@ -1,31 +1,35 @@
-# 🌲 Sistema Tree Prime - Plataforma de Gestão Contábil
+# 📋 Tree Prime - Sistema de Gestão Contábil
 
-![Status](https://img.shields.io/badge/Status-Em_Desenvolvimento-green?style=for-the-badge)
-![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
 ## 📋 Sobre o Projeto
-O **Tree Prime** é um sistema de gestão desenvolvido para automatizar fluxos de trabalho, gerenciar o cadastro de clientes e garantir um controle financeiro rigoroso para escritórios de contabilidade. O foco principal é a solidez na manipulação das informações financeiras e de acesso.
 
----
+O **Tree Prime** é um painel de acompanhamento de rotinas para um escritório de contabilidade: cadastro de clientes, checklists de obrigações (abertura, mensal contábil, fiscal, departamento pessoal, obrigações acessórias) e exportação de relatórios em PDF. É uma SPA (single page application) em JavaScript puro, sem framework e sem backend — todos os dados ficam salvos no `localStorage` do navegador, com opção de exportar/importar um backup em JSON.
 
-## 🗄️ Arquitetura e Modelagem de Dados (Foco DBA)
-A base desta aplicação é o seu banco de dados relacional. A modelagem foi pensada para garantir integridade e agilidade nas consultas, estruturando de forma robusta as entidades de clientes, finanças e usuários do sistema.
+> **Nota de escopo:** este é um protótipo funcional client-side, não uma aplicação com backend/banco de dados real. Login e persistência local são adequados para demonstração e uso individual, não para múltiplos usuários simultâneos em produção.
 
-<img width="1857" height="922" alt="image" src="https://github.com/user-attachments/assets/7b4218db-de59-4b1c-8d37-aa061bba323d" />
+## 🎯 Funcionalidades
 
+- **Dashboard** — visão geral das rotinas
+- **Cadastro de Abertura** e **Clientes Ativos** — com busca por nome
+- **Checklists** — Mensal Contábil, Fiscal, Departamento Pessoal, Obrigações Acessórias
+- **Gestão de usuários** — perfil administrador com tela própria
+- **Backup** — exportação e importação dos dados em JSON
+- **Relatórios em PDF** — via [html2pdf.js](https://github.com/eKoopmans/html2pdf.js)
+- **Gráficos** — via [Chart.js](https://www.chartjs.org/)
 
----
+## 🛠️ Stack Técnico
 
-## 🔐 Controle de Acesso e Segurança
-O sistema conta com um módulo de gestão de usuários. Perfis de administração possuem autorização exclusiva para visualizar gráficos de desempenho financeiro e realizar alterações sensíveis, garantindo a proteção dos dados do escritório.
+- JavaScript (vanilla, sem framework)
+- HTML5 + CSS3
+- `localStorage` para persistência de dados no navegador
+- Font Awesome, html2pdf.js e Chart.js via CDN
 
----
+## 🚀 Como rodar
 
-## 💻 Interface de Usuário e Ergonomia
-A interface foi desenvolvida com foco no conforto visual do usuário. O sistema utiliza um esquema de cores personalizado com fundo em tons de cinza médio e escuro, abandonando os designs brancos tradicionais. Essa escolha reduz drasticamente a fadiga ocular durante as rotinas contábeis diárias.
-
-<img width="1896" height="936" alt="image" src="https://github.com/user-attachments/assets/dd0e8d5f-84a0-4613-abfa-e0ab102fe1ac" />
+Não há instalação nem dependências — basta abrir o arquivo `sistema-checklist-contabil/index.html` em um navegador.
 
 ---
 *Desenvolvido por Rodrigo Aparecido*
